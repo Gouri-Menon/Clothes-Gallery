@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+
+ .logo{
+    width: 50px;
+ }   
+    header {
+
+    margin-bottom: 0%;
+    width: 95.5%;  
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(17, 11, 62);
+    padding:40px;  
+}
+
+.nav a{
+    margin-left: 30px;
+    color:white;
+}
+i{
+    color:white;
+}
+.first-page h2{
+  color: white;
+  font-size: small;
+  font-family: cursive;
+}
+ .menu a {
+    color:white;
+    text-decoration: none;
+ }
+ body{
+    margin-top: 0px;
+    margin-left: 0px;
+    /* background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Vwd2s2MTg0MzExOC13aWtpbWVkaWEtaW1hZ2Uta293YzVmbDcuanBn.jpg"); */
+    background-repeat: no-repeat;
+    background-size:cover;
+ }
+ .wrapper{
+      background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Vwd2s2MTg0MzExOC13aWtpbWVkaWEtaW1hZ2Uta293YzVmbDcuanBn.jpg");
+      background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 0%;
+    width: 101%;
+    height: 600px;
+
+ }
+ /* .cover{
+    color:white;
+    /* padding: 10% ; */
+    /* margin-left: 70%;
+    margin-top: 15%;
+    font-family:sans-serif;
+    align-items: center;
+    font-weight:bolder;
+ } */ */
+/* .new-post{
+  background-color: #fff;
+  color: black;
+  margin-top: 0%; */
+
+  /* padding: 20px; */
+/* } */
+.recent-ideas h1{
+  background-color: rgb(17, 11, 62);
+  color: white;
+  padding: 20px;
+}
+.recent-ideas h1{
+  color:white;
+  background-color:rgb(17, 11, 62);
+  padding: 30px;
+  width: 97%;
+  margin-top: 0%;
+}
+form{
+  padding-top: 20px;
+  border-radius: 40px;
+  border: 2px solid rgb(19, 18, 18);
+  width: 50%;
+  /* margin-top: 50%; */
+  padding: 20px;
+  margin-left: 25%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+
+}
+input{
+  display: flex;
+  margin-top: 5px;
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+
+}
+.form-field{
+  padding: 20px;
+}
+form h1{
+  color: #040404;
+}
+ form button{
+  margin-left: 43%;
+  padding: 10px;
+  width: 20%;
+  border-radius: 5px;
+
+ }
+
+ form button:hover{
+  background-color: darkgray;
+  /* transition: transform 2s; */
+  cursor: pointer;
+ }
+ .form-group {
+  margin: 15px; /* Add margin */
+  font-size: larger; /* Set font size */
+  font-weight: bold; /* Set font weight */
+}
+
+/* Label styles within the form group */
+.form-group label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 5px; /* Add margin at the bottom */
+  margin-top: 15px; /* Add margin at the top */
+}
+
+/* Styles for form controls */
+.form-control {
+  width: 100%; /* Make controls full width */
+  padding: 10px; /* Add padding */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+.items h1{
+  color: white;
+}
+#edit-form input{
+  width: 80%;
+
+}
+#edit-form button{
+  width: 30%;
+}
+/* Special height for textarea form controls */
+textarea.form-control {
+  height: 100px; /* Set height */
+}
+.button2 {
+  /* display: flex; Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  margin-top: 10px; /* Add margin at the top */
+}
+.store {
+  /* border: 1px solid #070707; Add bottom border */
+  padding-bottom: 10px; /* Add padding at the bottom */
+  margin-bottom: 10px; /* Add margin at the bottom */
+  /* background-color: #050505;
+  color: white; */
+  margin-left: 35%;
+  
+  
+}
+
+/* Remove bottom border for the last blog */
+.store:last-child {
+  border: none; /* Remove border */
+}
+
+/* Styles for blog titles */
+.store h2 {
+  margin-top: 25px; /* Add margin at the top */
+  padding-bottom: 5px; /* Add padding at the bottom */
+  font-size: 30px; /* Set font size */
+  font-weight: 800; /* Set font weight */
+}
+
+/* Styles for blog images */
+.store img {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+  height: 500px; /* Set height */
+  width: 50%; /* Set width */
+}
+
+/* Styles for blog content */
+.store p {
+  margin: 10px 0 0 20px; /* Add vertical margin */
+  font-size: x-large; /* Set font size */
+}
+
+/* Styles for edit buttons */
+.edit-btn {
+  height: 30px; /* Set height */
+  width: 80px; /* Set width */
+  background-color:rgb(17, 11, 62);; /* Set background color */
+  color: white; /* Set text color */
+  font-size: large; /* Set font size */
+  border: 1px solid black; /* Add border */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Styles for blog metadata */
+.store small {
+  font-size: large; /* Set font size */
+  color: #050505; /* Set text color */
+}
+
+/* Hover effect for edit buttons */
+.edit-btn:hover {
+  background-color:rgb(41, 167, 94);; /* Change background color on hover */
+}
+
+/* Styles for delete buttons */
+.delete-btn {
+  height: 30px; /* Set height */
+  width: 80px; /* Set width */
+  background-color: rgb(17, 11, 62);; /* Set background color */
+  color: white; /* Set text color */
+  font-size: large; /* Set font size */
+  border: 1px solid black; /* Add border */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Change cursor on hover */
+  margin-left: 33%;
+}
+
+/* Hover effect for delete buttons */
+.delete-btn:hover {
+  background-color: #da190b; /* Change background color on hover */
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed; /* Fix position */
+  z-index: 1; /* Place on top */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrolling */
+  background-color: rgb(0,0,0); /* Set background color */
+  background-color: rgba(0,0,0,0.4); /* Add transparency */
+}
+
+/* Modal content styles */
+.modal-content {
+  background-color: #fefefe; /* Set background color */
+  margin: 15% auto; /* Center horizontally */
+  padding: 20px; /* Add padding */
+  border: 1px solid #888; /* Add border */
+  border-radius: 15px; /* Round the corners */
+  width: 50%; /* Set width */
+}
+
+/* Close button styles */
+.close-btn {
+  color: #aaa; /* Set text color */
+  float: right; /* Align to the right */
+  font-size: 28px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  background-color: #4caf4f00; /* Set background color */
+}
+
+/* Hover and focus effect for close button */
+.close-btn:hover,
+.close-btn:focus {
+  color: rgb(250, 6, 6); /* Change text color on hover/focus */
+  text-decoration: none; /* Remove text decoration */
+  cursor: pointer; /* Change cursor on hover */
+}
+</style>
+
+<body>
+  <header class="first-page">
+      <div class="menu">
+          <a href="#"><i class="fa-solid fa-bars"></i> Menu</a>
+      </div>
+      <!-- <img class="logo" src="logo.png"> -->
+       <h2>drop your ideas</h2>
+      <div class="nav">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+      </div>
+  </header>
+  <h1><center>Create your own wardrobe with your own ideas</center></h1>
+  <div class="wrapper">
+    
+  </div>
+  <form class="form-field" id="new-idea-form">
+      <h1><center>Add your new idea</center></h1>
+      <input type="text" id="product" placeholder="Enter Product Name" required>
+      <input type="text" id="imgUrl" placeholder="Enter Image URL" required>
+      <input type="text" id="description" placeholder="Enter any description" required>
+      <button type="submit" class="post-btn">POST</button>
+  </form>
+
+<div class="recent-ideas">
+  <h1><center>Your recent ideas</center></h1>
+</div>
+
+  <div id="items">
+  </div>
+
+  <!-- Modal for editing post -->
+  <div id="editModal" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <form id="edit-form">
+              <h2>Edit Post</h2>
+              <div class="form-group">
+                  <label for="edit-product">Product Name</label>
+                  <input type="text" id="edit-product" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="edit-imgUrl">Image Url</label>
+                  <input type="text" id="edit-imgUrl" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="edit-description">Description</label>
+                  <textarea id="edit-description" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn">Update Post</button>
+          </form>
+      </div>
+  </div>
+
+  <script>
+      let currentEditId = null;
+
+      document.getElementById('new-idea-form').addEventListener('submit', createPost);
+      document.getElementById('edit-form').addEventListener('submit', editPost);
+
+      // Fetch all posts and display them
+      async function fetchStores() {
+          try {
+              const response = await fetch('http://localhost:5000/api/stores');
+              const stores = await response.json();
+              const container = document.getElementById('items');
+              container.innerHTML = '';
+
+              stores.forEach(store => {
+                  const storeDiv = document.createElement('div');
+                  storeDiv.className = 'store';
+                  storeDiv.innerHTML = `
+                      <h2>${store.product}</h2>
+                      <p>${store.description}</p>
+                      <img src="${store.imgUrl}" alt="">
+                      <small>Posted on: ${new Date(store.date).toLocaleString()}</small>
+                      <div class="button2">
+                          <button class="edit-btn" onclick="openEditModal('${store._id}', '${store.product}', '${store.description}', '${store.imgUrl}')">Edit</button>
+                          <button class="delete-btn" onclick="deleteItem('${store._id}')">Delete</button>
+                      </div>`;
+                  container.appendChild(storeDiv); 
+              });
+          } catch (error) {
+              console.error('Error fetching stores:', error);
+          }
+      }
+
+      function isValidImageUrl(url) {
+          return /\.(jpeg|jpg|gif|png)$/.test(url);
+      }
+
+      async function createPost(e) {
+          e.preventDefault();
+          const product = document.getElementById('product').value;
+          const description = document.getElementById('description').value;
+          const imgUrl = document.getElementById('imgUrl').value;
+          
+
+          if (!isValidImageUrl(imgUrl)) {
+              alert('Please enter a valid image URL.');
+              return;
+          }
+
+          try {
+              const response = await fetch('http://localhost:5000/api/stores', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({ product, description, imgUrl })
+              });
+
+              if (response.ok) {
+                  document.getElementById('new-idea-form').reset();
+                  fetchStores();
+              } else {
+                  console.error('Failed to create item:', response.statusText);
+              }
+          } catch (error) {
+              console.error('Error creating post:', error);
+          }
+      }
+
+      function openEditModal(id, product, description, imgUrl) {
+          currentEditId = id;
+          document.getElementById('edit-product').value = product;
+          document.getElementById('edit-description').value = description;
+          document.getElementById('edit-imgUrl').value = imgUrl;
+          document.getElementById('editModal').style.display = 'block';
+      }
+
+      async function editPost(e) {
+          e.preventDefault();
+          const product = document.getElementById('edit-product').value;
+          const description = document.getElementById('edit-description').value;
+          const imgUrl = document.getElementById('edit-imgUrl').value;
+
+          if (!isValidImageUrl(imgUrl)) {
+              alert('Please enter a valid image URL.');
+              return;
+          }
+
+          if (currentEditId) {
+              try {
+                  const response = await fetch(`http://localhost:5000/api/stores/${currentEditId}`, {
+                      method: 'PUT',
+                      headers: {
+                          'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify({ product, description, imgUrl })
+                  });
+
+                  if (response.ok) {
+                      fetchStores();
+                      closeModal();
+                  } else {
+                      console.error('Failed to update post:', response.statusText);
+                  }
+              } catch (error) {
+                  console.error('Error updating post:', error);
+              }
+          }
+      }
+
+      async function deleteItem(id) {
+          if (confirm('Are you sure you want to delete this item?')) {
+              try {
+                  const response = await fetch(`http://localhost:5000/api/stores/${id}`, {
+                      method: 'DELETE'
+                  });
+
+                  if (response.ok) {
+                      fetchStores();
+                  } else {
+                      console.error('Failed to delete item:', response.statusText);
+                  }
+              } catch (error) {
+                  console.error('Error deleting item:', error);
+              }
+          }
+      }
+
+      function closeModal() {
+          document.getElementById('editModal').style.display = 'none';
+      }
+
+      // Fetch initial data on load
+      fetchStores();
+  </script>
+</body>
+</html>
